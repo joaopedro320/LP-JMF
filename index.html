@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!--
+=====================================================================
+  MARMORARIA JMF | LANDING PAGE | QH4 GROWTH
+  Índice de pontos que você precisa preencher (busque com Ctrl+F):
+
+  [A] GTM SCRIPT HEAD ............ head, logo abaixo deste bloco
+  [B] GTM NOSCRIPT BODY .......... início do <body>
+  [C] META PIXEL ................. head
+  [D] GOOGLE ADS / GTAG .......... head + função trackLead() no JS final
+  [E] IMAGENS .................... todas em /img, marcadas nas seções
+  [F] DEPOIMENTOS ................ seção "Indicação" (bloco comentado)
+  [G] LOGO ....................... /img/logo-jmf.png e logo-jmf-claro.png
+  [H] CNPJ / ENDEREÇO ............ rodapé e JSON-LD
+  [I] DOMÍNIO CANÔNICO ........... canonical, og:url e JSON-LD
+=====================================================================
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ========== [A] GTM: COLE AQUI O SCRIPT DO HEAD ========== -->
+<!-- Substitua GTM-XXXXXXX pelo ID real do container
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+-->
+<!-- ========== FIM [A] ========== -->
+
+<!-- ========== [C] META PIXEL: COLE AQUI ========== -->
+<!-- Substitua SEU_PIXEL_ID
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','SEU_PIXEL_ID');fbq('track','PageView');
+</script>
+-->
+<!-- ========== FIM [C] ========== -->
+
+<!-- ========== [D] GOOGLE ADS / GTAG: COLE AQUI ========== -->
+<!-- Substitua AW-XXXXXXXXX e o label da conversão em trackLead()
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-XXXXXXXXX');
+</script>
+-->
+<!-- ========== FIM [D] ========== -->
+
+<title>Marmoraria JMF | Bancadas em mármore, granito e quartzo sob medida em Americana e São Paulo</title>
+<meta name="description" content="Marmoraria com 15 anos de mercado em Americana, SP. Bancadas de cozinha, ilhas, área gourmet, lavatórios, painéis, nichos, mesas, soleiras e peitoris em mármore, granito, quartzo e lâmina ultracompacta. Peça pronta e instalada. Atendemos Americana, Santa Bárbara d'Oeste e São Paulo capital.">
+<meta name="robots" content="index, follow">
+<!-- [I] Ajuste o domínio final -->
+<link rel="canonical" href="https://www.marmorariajmf.com.br/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Marmoraria JMF">
+<meta property="og:title" content="Marmoraria JMF | Bancadas sob medida, prontas e instaladas">
+<meta property="og:description" content="15 anos em mármore, granito, quartzo e lâmina ultracompacta. Americana, Santa Bárbara d'Oeste e São Paulo capital.">
+<meta property="og:url" content="https://www.marmorariajmf.com.br/">
+<meta property="og:image" content="https://www.marmorariajmf.com.br/img/ilha-cozinha-branca-cooktop.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marmoraria JMF | Bancadas sob medida, prontas e instaladas">
+<meta name="twitter:description" content="15 anos em mármore, granito, quartzo e lâmina ultracompacta. Americana, Santa Bárbara d'Oeste e São Paulo capital.">
+<meta name="twitter:image" content="https://www.marmorariajmf.com.br/img/ilha-cozinha-branca-cooktop.webp">
+<meta name="theme-color" content="#17150F">
+
+<link rel="icon" type="image/png" href="img/logo-jmf.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..500&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* =========================================================
+   TOKENS
+   ========================================================= */
+:root{
+  --ink:#17150F;            /* grafite quente, base escura */
+  --ink-2:#221F18;          /* superfície escura elevada */
+  --stone:#F2EFE9;          /* off-white pedra, base clara */
+  --stone-2:#E5DFD3;        /* bege claro de apoio */
+  --line:#CFC7B8;           /* hairline no claro */
+  --line-dark:#3A352B;      /* hairline no escuro */
+  --text:#1B1812;
+  --text-soft:#6B6355;
+  --text-onink:#EFEBE2;
+  --text-onink-soft:#A69E8D;
+  --roxo:#4E1156;           /* acento primário, vem da logo */
+  --roxo-claro:#7A2A85;
+  --verde:#2A6B49;          /* acento secundário, vem da logo */
+  --max:1240px;
+  --pad:clamp(20px,5vw,64px);
+  --r:2px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+html,body{max-width:100%;overflow-x:hidden}
+body{
+  margin:0;background:var(--stone);color:var(--text);
+  font-family:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:17px;line-height:1.65;font-weight:400;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:400;line-height:1.06;letter-spacing:-.015em;margin:0}
+h1{font-size:clamp(2.5rem,6.2vw,4.6rem)}
+h2{font-size:clamp(2rem,4.4vw,3.3rem)}
+h3{font-size:clamp(1.25rem,2vw,1.6rem);line-height:1.2}
+p{margin:0 0 1.05em}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--pad)}
+.sec{padding-block:clamp(72px,10vw,140px)}
+.dark{background:var(--ink);color:var(--text-onink)}
+.dark h1,.dark h2,.dark h3{color:#fff}
+.dark p{color:var(--text-onink-soft)}
+.light{background:var(--stone)}
+.light-2{background:var(--stone-2)}
+.grain{position:relative}
+.grain::after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.055;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/></filter><rect width='140' height='140' filter='url(%23n)'/></svg>");
+}
+.eyebrow{
+  font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500;
+  color:var(--text-soft);margin:0 0 22px;display:flex;align-items:center;gap:12px;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--roxo);flex:none}
+.dark .eyebrow{color:var(--text-onink-soft)}
+.dark .eyebrow::before{background:var(--roxo-claro)}
+.lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--text-soft);max-width:62ch}
+.dark .lead{color:var(--text-onink-soft)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--roxo);color:#fff;padding:12px 18px;z-index:999}
+.skip:focus{left:12px;top:12px}
+:focus-visible{outline:2px solid var(--roxo-claro);outline-offset:3px}
+.dark :focus-visible{outline-color:#C79BD0}
+
+/* botões */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:52px;padding:14px 26px;border-radius:var(--r);border:1px solid transparent;
+  font-family:"Inter Tight",sans-serif;font-size:1rem;font-weight:500;letter-spacing:.01em;
+  text-decoration:none;cursor:pointer;transition:background .22s ease,color .22s ease,border-color .22s ease;
+}
+.btn-p{background:var(--roxo);color:#fff}
+.btn-p:hover{background:var(--roxo-claro)}
+.btn-g{background:transparent;color:var(--text);border-color:var(--line)}
+.btn-g:hover{border-color:var(--roxo);color:var(--roxo)}
+.dark .btn-g,.hero .btn-g{color:#fff;border-color:var(--line-dark)}
+.dark .btn-g:hover,.hero .btn-g:hover{border-color:#fff;color:#fff}
+.btn svg{width:19px;height:19px;flex:none}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+.hdr{
+  position:fixed;inset:0 0 auto;z-index:80;background:rgba(23,21,15,0);
+  transition:background .3s ease,border-color .3s ease,padding .3s ease;
+  border-bottom:1px solid transparent;padding-block:18px;
+}
+.hdr.stuck{background:rgba(23,21,15,.96);border-bottom-color:var(--line-dark);padding-block:10px}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.hdr img{height:48px;width:auto;transition:height .3s ease}
+.hdr.stuck img{height:38px}
+.nav{display:flex;gap:30px;align-items:center}
+.nav a{
+  color:var(--text-onink);text-decoration:none;font-size:.86rem;letter-spacing:.06em;
+  text-transform:uppercase;font-weight:500;padding:6px 0;border-bottom:1px solid transparent;
+}
+.nav a:hover{border-bottom-color:var(--roxo-claro)}
+.hdr .btn{min-height:44px;padding:10px 20px;font-size:.9rem}
+.burger{display:none;background:none;border:1px solid var(--line-dark);color:#fff;width:46px;height:46px;border-radius:var(--r);cursor:pointer}
+.burger span{display:block;width:18px;height:1px;background:#fff;margin:4px auto}
+@media(max-width:1000px){
+  .nav{
+    position:fixed;inset:0 0 0 auto;width:min(84vw,340px);background:var(--ink);
+    flex-direction:column;align-items:flex-start;justify-content:center;gap:22px;
+    padding:0 34px;transform:translateX(100%);transition:transform .32s ease,visibility .32s ease;
+    border-left:1px solid var(--line-dark);visibility:hidden;
+  }
+  .nav.open{transform:translateX(0);visibility:visible}
+  .nav a{font-size:1.05rem}
+  .burger{display:block}
+  .hdr .btn.desk{display:none}
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero{background:var(--ink);color:var(--text-onink);padding-top:clamp(120px,16vw,170px);padding-bottom:0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,72px);align-items:end}
+.hero h1{color:#fff;margin-bottom:26px}
+.hero h1 em{font-style:italic;color:#D9BFE0}
+.hero .lead{max-width:52ch;margin-bottom:32px;color:var(--text-onink-soft)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:44px}
+.hero-fig{position:relative;margin-bottom:-1px}
+.hero-fig img{width:100%;height:clamp(320px,46vw,560px);object-fit:cover;filter:saturate(.95) contrast(1.03)}
+.hero-cap{
+  padding:14px 0 0;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--text-onink-soft);
+}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-fig{margin-inline:calc(var(--pad)*-1)}
+  .hero-cap{padding-inline:var(--pad)}
+}
+/* barra de credibilidade */
+.creds{border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);background:var(--ink)}
+.creds .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.cred{min-height:112px;padding:26px clamp(18px,2.2vw,34px);border-right:1px solid var(--line-dark);display:flex;flex-direction:column;justify-content:center}
+.cred:first-child{padding-left:0}
+.cred:last-child{border-right:0;padding-right:0}
+.cred b{display:block;font-family:"Fraunces",serif;font-size:clamp(1.35rem,2vw,1.65rem);color:#fff;font-weight:400;line-height:1.1;margin-bottom:7px}
+.cred span{font-size:.75rem;line-height:1.35;letter-spacing:.09em;text-transform:uppercase;color:var(--text-onink-soft);max-width:26ch}
+@media(max-width:860px){
+  .creds .wrap{grid-template-columns:1fr 1fr}
+  .cred{min-height:96px;padding:20px 20px}
+  .cred:first-child{padding-left:0}
+  .cred:nth-child(2){border-right:0;padding-right:0}
+  .cred:nth-child(1),.cred:nth-child(2){border-bottom:1px solid var(--line-dark)}
+  .cred:nth-child(3){padding-left:0}
+  .cred:last-child{padding-right:0}
+}
+
+/* =========================================================
+   BLOCOS GENÉRICOS
+   ========================================================= */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,90px);align-items:center}
+.two.top{align-items:start}
+@media(max-width:860px){.two{grid-template-columns:1fr}}
+
+/* quem somos: imagem acompanha a altura real do texto, sem ficar comprida demais */
+.about-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(34px,5.5vw,76px);align-items:stretch}
+.about-figure{margin:0;position:relative;min-height:520px;overflow:hidden;background:#d8d2c7}
+.about-figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 52%;filter:saturate(.94) contrast(1.02)}
+.about-copy{padding-block:10px;align-self:center}
+@media(max-width:860px){
+  .about-grid{grid-template-columns:1fr;gap:28px}
+  .about-figure{min-height:0;aspect-ratio:4/3}
+  .about-copy{padding-block:0}
+}
+.hd{max-width:70ch;margin-bottom:clamp(40px,5vw,68px)}
+h2 + .lead,h2 + p{margin-top:20px}
+.rule{height:1px;background:var(--line);border:0;margin:0}
+.dark .rule{background:var(--line-dark)}
+
+/* lista de argumentos */
+.args{list-style:none;padding:0;margin:34px 0 0;border-top:1px solid var(--line)}
+.args li{display:grid;grid-template-columns:auto 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.args .n{font-family:"Fraunces",serif;font-size:.95rem;color:var(--roxo);padding-top:3px}
+.args h3{margin-bottom:6px}
+.args p{margin:0;color:var(--text-soft);font-size:1rem}
+
+/* materiais */
+.mat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark)}
+.mat{background:var(--ink);padding:clamp(26px,3vw,40px)}
+.mat.wide{grid-column:1 / -1;display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,4vw,52px);align-items:center}
+.mat figure{margin:0}
+.mat img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.mat.wide img{aspect-ratio:1/1;height:auto}
+.mat .tag{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--roxo-claro);display:block;margin-bottom:14px}
+.mat h3{color:#fff;margin-bottom:14px}
+.mat dl{margin:20px 0 0;border-top:1px solid var(--line-dark);font-size:.95rem}
+.mat dt{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-onink-soft);padding-top:14px}
+.mat dd{margin:2px 0 14px;color:#DCD6C9}
+@media(max-width:860px){.mat-grid{grid-template-columns:1fr}.mat.wide{grid-template-columns:1fr}}
+
+/* aplicações */
+.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,26px)}
+.app{background:#fff;border:1px solid var(--line)}
+.app img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.app .body{padding:22px 24px 26px}
+.app h3{font-size:1.2rem;margin-bottom:8px}
+.app p{margin:0;font-size:.96rem;color:var(--text-soft)}
+.app.plain{display:flex;flex-direction:column;justify-content:center;background:var(--ink);color:#fff;padding:34px}
+.app.plain h3{color:#fff}
+.app.plain p{color:var(--text-onink-soft)}
+@media(max-width:900px){.apps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.apps{grid-template-columns:1fr}}
+
+/* processo */
+.steps{counter-reset:s;border-top:1px solid var(--line-dark)}
+.step{display:grid;grid-template-columns:90px 1fr 1fr;gap:clamp(20px,4vw,60px);padding:32px 0;border-bottom:1px solid var(--line-dark);align-items:start}
+.step .num{font-family:"Fraunces",serif;font-size:2.2rem;color:var(--roxo-claro);line-height:1}
+.step h3{color:#fff}
+.step p{margin:0}
+@media(max-width:760px){.step{grid-template-columns:56px 1fr}.step p{grid-column:2}}
+
+/* galeria */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.gal img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;filter:saturate(.96)}
+.gal .zoom{display:block;overflow:hidden}
+.gal img{transition:transform .5s cubic-bezier(.2,.6,.2,1)}
+.gal .zoom:hover img,.gal .zoom:focus-visible img{transform:scale(1.05)}
+@media(max-width:900px){.gal{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.gal{grid-template-columns:repeat(2,1fr)}}
+
+/* faq */
+.faq{border-top:1px solid var(--line);max-width:900px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  cursor:pointer;list-style:none;padding:24px 44px 24px 0;position:relative;
+  font-family:"Fraunces",serif;font-size:clamp(1.1rem,1.7vw,1.35rem);line-height:1.3;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:8px;top:22px;font-size:1.5rem;color:var(--roxo);transition:transform .25s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 44px 26px 0;color:var(--text-soft);max-width:70ch}
+.faq .a p:last-child{margin-bottom:0}
+
+/* cta final */
+.cta-final{text-align:center}
+.cta-final h2{margin-bottom:20px}
+.cta-final .lead{margin:0 auto 34px}
+.cta-box{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.horario{margin-top:30px;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-onink-soft)}
+
+/* footer */
+.ft{background:var(--ink-2);color:var(--text-onink-soft);padding-block:64px 32px;font-size:.95rem}
+.ft-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+.ft img{height:76px;width:auto;margin-bottom:20px}
+.ft h4{font-family:"Inter Tight",sans-serif;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:#fff;margin:0 0 16px;font-weight:500}
+.ft a{text-decoration:none}
+.ft a:hover{color:#fff}
+.ft ul{list-style:none;padding:0;margin:0}
+.ft li{margin-bottom:9px}
+.ft-base{margin-top:44px;padding-top:22px;border-top:1px solid var(--line-dark);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:.82rem}
+@media(max-width:760px){.ft-grid{grid-template-columns:1fr}}
+
+/* whatsapp flutuante */
+.wpp{
+  position:fixed;right:18px;bottom:18px;z-index:90;width:58px;height:58px;border-radius:50%;
+  background:var(--verde);display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 24px rgba(0,0,0,.28);text-decoration:none;
+}
+.wpp svg{width:30px;height:30px;fill:#fff}
+.wpp:hover{background:#1F5639}
+
+/* =========================================================
+   BOTÃO DE AMPLIAR + LIGHTBOX
+   ========================================================= */
+.zoom{
+  display:block;width:100%;padding:0;border:0;margin:0;background:none;
+  cursor:zoom-in;position:relative;overflow:hidden;line-height:0;
+  -webkit-tap-highlight-color:transparent;
+}
+.zoom::after{
+  content:"";position:absolute;inset:0;background:rgba(23,21,15,.28);
+  opacity:0;transition:opacity .25s ease;pointer-events:none;
+}
+.zoom:hover::after,.zoom:focus-visible::after{opacity:1}
+.zoom .ico{
+  position:absolute;right:12px;bottom:12px;width:34px;height:34px;border-radius:50%;
+  background:rgba(23,21,15,.72);display:flex;align-items:center;justify-content:center;
+  opacity:0;transform:translateY(6px);transition:opacity .25s ease,transform .25s ease;pointer-events:none;
+}
+.zoom:hover .ico,.zoom:focus-visible .ico{opacity:1;transform:none}
+.zoom .ico svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2}
+@media(hover:none){.zoom .ico{opacity:1;transform:none;width:30px;height:30px}}
+
+.lb{
+  position:fixed;inset:0;z-index:200;background:#0C0B08;
+  display:none;align-items:center;justify-content:center;
+  opacity:0;transition:opacity .25s ease;
+  padding:max(12px,env(safe-area-inset-top)) 12px max(12px,env(safe-area-inset-bottom));
+}
+.lb.on{display:flex}
+.lb.vis{opacity:1}
+.lb-fig{margin:0;max-width:min(1400px,100%);max-height:100%;display:flex;flex-direction:column;gap:14px;align-items:center}
+.lb-fig img{
+  max-width:100%;max-height:calc(100svh - 130px);width:auto;height:auto;object-fit:contain;
+  transition:opacity .2s ease;
+}
+.lb-cap{
+  color:var(--text-onink-soft);font-size:.85rem;text-align:center;max-width:70ch;
+  line-height:1.45;padding-inline:8px;
+}
+.lb-count{display:block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#8B8271;margin-top:6px}
+.lb-btn{
+  position:absolute;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
+  color:#fff;width:52px;height:52px;border-radius:50%;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:background .2s ease;
+}
+.lb-btn:hover{background:rgba(255,255,255,.18)}
+.lb-btn svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2}
+.lb-close{top:14px;right:14px}
+.lb-prev{left:14px;top:50%;transform:translateY(-50%)}
+.lb-next{right:14px;top:50%;transform:translateY(-50%)}
+@media(max-width:700px){
+  .lb-btn{width:46px;height:46px}
+  .lb-prev{left:8px}.lb-next{right:8px}
+  .lb-prev,.lb-next{top:auto;bottom:14px;transform:none}
+  .lb-fig img{max-height:calc(100svh - 170px)}
+}
+body.lb-open{overflow:hidden}
+
+/* =========================================================
+   AJUSTES RESPONSIVOS
+   ========================================================= */
+/* desktop grande */
+@media(min-width:1600px){
+  :root{--max:1360px}
+}
+/* tablet paisagem */
+@media(max-width:1180px){
+  .hero-grid{gap:clamp(28px,4vw,48px)}
+  .step{grid-template-columns:72px 1fr 1fr;gap:28px}
+}
+/* tablet */
+@media(max-width:1000px){
+  body{font-size:16.5px}
+  .mat-grid{grid-template-columns:1fr}
+  .mat.wide{grid-template-columns:1fr;gap:26px}
+  .mat.wide figure{max-width:520px;margin-inline:auto;width:100%}
+  .two figure{margin-inline:auto}
+  .apps{grid-template-columns:repeat(2,1fr)}
+  .two{grid-template-columns:1fr;gap:36px}
+  .two figure{max-width:560px}
+  .step{grid-template-columns:64px 1fr;gap:22px}
+  .step p{grid-column:2}
+  .hero-fig img{height:clamp(300px,50vw,460px)}
+}
+/* tablet retrato / mobile grande */
+@media(max-width:760px){
+  .sec{padding-block:clamp(56px,11vw,84px)}
+  .ft-grid{grid-template-columns:1fr 1fr;gap:32px}
+  .gal{gap:8px}
+  .cred{padding:18px 14px 18px 0}
+}
+/* mobile */
+@media(max-width:600px){
+  body{font-size:16px;line-height:1.6}
+  .two figure,.mat.wide figure{max-width:100%}
+  .hero-fig{margin-inline:calc(var(--pad)*-1);max-width:100vw}
+  h1{font-size:clamp(2.05rem,9vw,2.9rem)}
+  h2{font-size:clamp(1.7rem,7.4vw,2.3rem)}
+  .apps{grid-template-columns:1fr}
+  .app img{aspect-ratio:16/10}
+  .ft-grid{grid-template-columns:1fr;gap:28px}
+  .hero-cta{gap:10px}
+  .hero-cta .btn,.cta-box .btn{width:100%}
+  .cta-box{flex-direction:column}
+  .creds .wrap{grid-template-columns:1fr}
+  .cred{border-right:0;border-bottom:1px solid var(--line-dark);padding:16px 0}
+  .cred:last-child{border-bottom:0}
+  .args li{grid-template-columns:1fr;gap:6px}
+  .args .n{padding-top:0}
+  .faq summary{padding-right:38px}
+  .faq .a{padding-right:0}
+  .mat dl{font-size:.92rem}
+  .wpp{width:54px;height:54px;right:14px;bottom:14px}
+}
+@media(max-width:380px){
+  .hdr img{height:40px}
+  .hdr .btn{padding:10px 14px;font-size:.84rem}
+}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.6,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<!-- ========== [B] GTM: COLE AQUI O NOSCRIPT DO BODY ========== -->
+<!--
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+-->
+<!-- ========== FIM [B] ========== -->
+
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<!-- ======================= HEADER ======================= -->
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a href="#topo" aria-label="Marmoraria JMF, início">
+      <!-- ========== [G] LOGO: SUBSTITUIR SE HOUVER VERSÃO OFICIAL EM VETOR ========== -->
+      <img src="img/logo-jmf-claro.png" alt="Marmoraria JMF" width="139" height="129">
+    </a>
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <a href="#empresa">A JMF</a>
+      <a href="#materiais">Materiais</a>
+      <a href="#aplicacoes">Aplicações</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#regioes">Onde atendemos</a>
+      <a href="#perguntas">Perguntas</a>
+    </nav>
+    <a class="btn btn-p desk js-lead" href="https://wa.me/5519996273192" target="_blank" rel="noopener" data-local="header">
+      Falar no WhatsApp
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ======================= HERO ======================= -->
+<section class="hero grain" id="topo">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Americana, Santa Bárbara d'Oeste e São Paulo capital</p>
+        <h1>Marmoraria de alto padrão <em>perto de você.</em></h1>
+        <p class="lead">São 15 anos cortando mármore, granito, quartzo e lâmina sob medida. A bancada não termina na pedra: você recebe a peça pronta, instalada e conferida, com a mesma pessoa te atendendo antes, durante e depois da venda.</p>
+        <div class="hero-cta">
+          <a class="btn btn-p js-lead" href="https://wa.me/5519996273192?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20de%20bancada%20com%20a%20Marmoraria%20JMF." target="_blank" rel="noopener" data-local="hero">
+            Pedir orçamento no WhatsApp
+          </a>
+          <a class="btn btn-g" href="#materiais">Ver os materiais</a>
+        </div>
+      </div>
+      <figure class="hero-fig">
+        <!-- ========== [E] IMAGEM: hero. Ideal trocar por foto horizontal 1920x1080 de ilha em quartzo. Atual: 1080x1080 do acervo ========== -->
+        <img src="img/ilha-cozinha-branca-cooktop.webp" alt="Ilha de cozinha com bancada branca de veios, cooktop embutido e prolongamento em madeira" width="1080" height="1080" fetchpriority="high">
+        <figcaption class="hero-cap">Ilha com cooktop embutido e bancada de veios claros</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="creds">
+  <div class="wrap">
+    <div class="cred"><b>15 anos</b><span>de mercado</span></div>
+    <div class="cred"><b>Familiar</b><span>produção e venda na mesma casa</span></div>
+    <div class="cred"><b>Indicação</b><span>a origem da maior parte das obras</span></div>
+    <div class="cred"><b>SP capital</b><span>além de Americana e Santa Bárbara</span></div>
+  </div>
+</div>
+
+<!-- ======================= O QUE DECIDE ======================= -->
+<section class="sec light">
+  <div class="wrap">
+    <div class="two top">
+      <div class="rv">
+        <p class="eyebrow">O que separa uma bancada boa de uma bancada cara</p>
+        <h2>O material é metade. A outra metade é o acabamento e a entrega.</h2>
+      </div>
+      <div class="rv">
+        <p class="lead">Duas marmorarias podem cortar a mesma chapa e entregar resultados diferentes. A diferença aparece na finalização da borda, no encaixe da cuba, no alinhamento das emendas e no dia em que a peça chega na obra.</p>
+        <ul class="args">
+          <li><span class="n">01</span><div><h3>Material de primeira qualidade</h3><p>Mármores nacionais e importados, granitos, quartzos e lâminas ultracompactas. Trabalhamos com todos os tipos, do nacional ao importado.</p></div></li>
+          <li><span class="n">02</span><div><h3>Acabamento e finalização</h3><p>É onde a JMF concentra o cuidado: borda, recorte, encaixe e alinhamento conferidos antes da peça sair da fábrica.</p></div></li>
+          <li><span class="n">03</span><div><h3>Prazo de entrega combinado</h3><p>Prazo definido junto com o orçamento e cumprido, porque obra parada esperando marmoraria custa caro.</p></div></li>
+          <li><span class="n">04</span><div><h3>Pós-venda no mesmo padrão</h3><p>O atendimento depois da instalação é o mesmo da pré-venda e da venda. Você continua falando com quem te vendeu.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= A JMF ======================= -->
+<section class="sec light-2" id="empresa">
+  <div class="wrap">
+    <div class="about-grid">
+      <figure class="about-figure rv">
+        <!-- Foto real de obra JMF, recortada para acompanhar a altura do texto -->
+        <img src="img/quem-somos-jmf.webp" alt="Ilha e bancada em granito executadas pela Marmoraria JMF" width="926" height="1080" loading="lazy">
+      </figure>
+      <div class="about-copy rv">
+        <p class="eyebrow">Quem faz</p>
+        <h2>Uma marmoraria de família, com o dono dentro da fábrica.</h2>
+        <p class="lead">A JMF está há 15 anos no mercado, em Americana. É uma empresa familiar e enxuta: o Fábio cuida da produção e está na pedra desde os 12 anos de idade, a Gisele cuida das vendas e do escritório, os dois filhos do casal trabalham junto e mais dois funcionários completam a equipe.</p>
+        <p>Isso muda uma coisa prática: a peça que sai daqui passou pela mão de quem é dono do negócio. Não existe camada de intermediário entre quem vende e quem corta.</p>
+        <p>A maior parte das obras chega por indicação de quem já foi cliente, de construtores e de arquitetos. É esse padrão que a gente entrega também para quem nos encontra pela primeira vez.</p>
+        <p style="margin-bottom:0"><a class="btn btn-g js-lead" href="https://wa.me/5519996273192?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20a%20Marmoraria%20JMF." target="_blank" rel="noopener" data-local="empresa">Conversar com a JMF</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= MATERIAIS ======================= -->
+<section class="sec dark grain" id="materiais">
+  <div class="wrap">
+    <div class="hd rv">
+      <p class="eyebrow">Materiais</p>
+      <h2>Do quartzo ao granito, nacional ou importado.</h2>
+      <p class="lead">Cada material resolve um problema diferente. Abaixo, o que considerar antes de escolher a superfície da sua cozinha, do seu lavatório ou da sua área gourmet.</p>
+    </div>
+
+    <div class="mat-grid rv">
+      <article class="mat wide">
+        <figure>
+          <!-- ========== [E] IMAGEM: material quartzo ========== -->
+          <img src="img/lavatorio-branco-gabinete.webp" alt="Lavatório em superfície branca com cuba esculpida e gabinete cinza" width="1080" height="1080" loading="lazy">
+        </figure>
+        <div>
+          <span class="tag">Destaque</span>
+          <h3>Quartzo</h3>
+          <p>Superfície de engenharia com alta densidade e cor uniforme de ponta a ponta. É a escolha de quem quer previsibilidade: a peça instalada é igual à amostra vista no orçamento.</p>
+          <dl>
+            <dt>Onde vai melhor</dt><dd>Bancada de cozinha, ilha, lavatório e área gourmet de uso intenso.</dd>
+            <dt>Ponto de atenção</dt><dd>Não é indicado para exposição direta e permanente ao sol.</dd>
+            <dt>Indicado para</dt><dd>Quem quer superfície clara sem sustos de veio e com manutenção simples.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="mat">
+        <figure>
+          <!-- ========== [E] IMAGEM: material mármore ========== -->
+          <img src="img/lavatorio-marmore-bege.webp" alt="Lavatório em mármore bege com cuba de apoio branca" width="1080" height="1080" loading="lazy">
+        </figure>
+        <span class="tag">Nacional e importado</span>
+        <h3>Mármore</h3>
+        <p>Pedra natural de veio marcado, cada chapa é única. Entrega o desenho que material nenhum reproduz igual.</p>
+        <dl>
+          <dt>Onde vai melhor</dt><dd>Lavatórios, painéis, mesas, soleiras e peitoris.</dd>
+          <dt>Ponto de atenção</dt><dd>É poroso e sensível a ácido, pede impermeabilização e cuidado com limpeza.</dd>
+        </dl>
+      </article>
+
+      <article class="mat">
+        <figure>
+          <!-- ========== [E] IMAGEM: material granito ========== -->
+          <img src="img/cozinha-granito-preto.webp" alt="Cozinha finalizada com bancada e ilha em granito escuro" width="1080" height="1080" loading="lazy">
+        </figure>
+        <span class="tag">Pedra natural</span>
+        <h3>Granito</h3>
+        <p>O material mais resistente do dia a dia brasileiro: aguenta calor, risco e uso pesado sem drama.</p>
+        <dl>
+          <dt>Onde vai melhor</dt><dd>Cozinha, churrasqueira, área de serviço e área externa.</dd>
+          <dt>Ponto de atenção</dt><dd>Tons e movimentação variam de chapa para chapa, vale escolher a peça.</dd>
+        </dl>
+      </article>
+
+      <article class="mat wide">
+        <figure>
+          <!-- ========== [E] IMAGEM: material lâmina ultracompacta ========== -->
+          <img src="img/nicho-iluminado-painel.webp" alt="Nicho iluminado revestido com placa de superfície clara e veios finos" width="1080" height="1080" loading="lazy">
+        </figure>
+        <div>
+          <span class="tag">Grandes formatos</span>
+          <h3>Lâmina ultracompacta</h3>
+          <p>Placas de grande formato e espessura reduzida. Permitem revestir painéis inteiros, nichos e frontões com pouquíssimas emendas, mantendo a continuidade do desenho.</p>
+          <dl>
+            <dt>Onde vai melhor</dt><dd>Painéis, nichos, frontões, mesas e revestimento de parede.</dd>
+            <dt>Ponto de atenção</dt><dd>Exige transporte e instalação técnica, o manuseio é o ponto crítico.</dd>
+            <dt>Indicado para</dt><dd>Projetos que pedem superfície contínua e visual limpo.</dd>
+          </dl>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= APLICAÇÕES ======================= -->
+<section class="sec light" id="aplicacoes">
+  <div class="wrap">
+    <div class="hd rv">
+      <p class="eyebrow">Aplicações</p>
+      <h2>Marmoraria em geral: da pia da cozinha ao peitoril.</h2>
+      <p class="lead">Tudo sob medida, projetado a partir da medição feita na sua obra.</p>
+    </div>
+    <div class="apps rv">
+      <article class="app">
+        <!-- ========== [E] IMAGEM: pias e bancadas de cozinha ========== -->
+        <button class="zoom" type="button" data-full="img/ilha-cozinha-branca-veios.webp" data-cap="Cozinha com bancada branca de veios, cooktop e prolongamento de madeira" aria-label="Ampliar foto: Cozinha com bancada branca de veios, cooktop e prolongamento de madeira"><img src="img/ilha-cozinha-branca-veios.webp" alt="Cozinha com bancada branca de veios, cooktop e prolongamento de madeira" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+        <div class="body"><h3>Pias e bancadas de cozinha</h3><p>Recorte para cuba e cooktop, bordas trabalhadas e frontão no mesmo material.</p></div>
+      </article>
+      <article class="app">
+        <!-- ========== [E] IMAGEM: área gourmet ========== -->
+        <button class="zoom" type="button" data-full="img/area-gourmet-ripado.webp" data-cap="Área gourmet com bancada escura e revestimento ripado de madeira" aria-label="Ampliar foto: Área gourmet com bancada escura e revestimento ripado de madeira"><img src="img/area-gourmet-ripado.webp" alt="Área gourmet com bancada escura e revestimento ripado de madeira" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+        <div class="body"><h3>Área gourmet</h3><p>Bancadas para churrasqueira, cooktop e apoio, pensadas para uso intenso.</p></div>
+      </article>
+      <article class="app">
+        <!-- ========== [E] IMAGEM: ilhas ========== -->
+        <button class="zoom" type="button" data-full="img/ilha-granito-area-gourmet.webp" data-cap="Ilha com bancada em granito claro voltada para sala de estar integrada" aria-label="Ampliar foto: Ilha com bancada em granito claro voltada para sala de estar integrada"><img src="img/ilha-granito-area-gourmet.webp" alt="Ilha com bancada em granito claro voltada para sala de estar integrada" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+        <div class="body"><h3>Ilhas</h3><p>Peças de maior porte, com saia, encaixe de cooktop e alinhamento de emenda.</p></div>
+      </article>
+      <article class="app">
+        <!-- ========== [E] IMAGEM: lavatórios ========== -->
+        <button class="zoom" type="button" data-full="img/lavatorio-duplo-banheiro.webp" data-cap="Banheiro com bancada clara e duas cubas de apoio" aria-label="Ampliar foto: Banheiro com bancada clara e duas cubas de apoio"><img src="img/lavatorio-duplo-banheiro.webp" alt="Banheiro com bancada clara e duas cubas de apoio" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+        <div class="body"><h3>Lavatórios</h3><p>Cuba esculpida ou de apoio, com bancada suspensa ou sobre gabinete.</p></div>
+      </article>
+      <article class="app">
+        <!-- ========== [E] IMAGEM: painéis e nichos ========== -->
+        <button class="zoom" type="button" data-full="img/sala-painel-ripado-nicho.webp" data-cap="Sala com painel ripado e nicho iluminado revestido em pedra clara" aria-label="Ampliar foto: Sala com painel ripado e nicho iluminado revestido em pedra clara"><img src="img/sala-painel-ripado-nicho.webp" alt="Sala com painel ripado e nicho iluminado revestido em pedra clara" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+        <div class="body"><h3>Painéis e nichos</h3><p>Revestimento de parede, nichos iluminados e frontões em placa contínua.</p></div>
+      </article>
+      <article class="app">
+        <!-- ========== [E] IMAGEM: mesas e peças ========== -->
+        <button class="zoom" type="button" data-full="img/peca-decorativa-redonda.webp" data-cap="Peça redonda em pedra usada como base decorativa sobre móvel" aria-label="Ampliar foto: Peça redonda em pedra usada como base decorativa sobre móvel"><img src="img/peca-decorativa-redonda.webp" alt="Peça redonda em pedra usada como base decorativa sobre móvel" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+        <div class="body"><h3>Mesas e peças</h3><p>Tampos de mesa, aparadores e peças especiais cortadas sob medida.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PROCESSO ======================= -->
+<section class="sec dark" id="processo">
+  <div class="wrap">
+    <div class="hd rv">
+      <p class="eyebrow">Como funciona</p>
+      <h2>Nenhuma etapa acontece sem você saber.</h2>
+      <p class="lead">Um processo claro do primeiro contato até a instalação. Sem surpresa de valor no meio do caminho.</p>
+    </div>
+    <div class="steps rv">
+      <div class="step"><span class="num">01</span><h3>Contato e entendimento</h3><p>Você chama no WhatsApp e conta o que precisa: ambiente, tipo de peça e a fase da obra. Já dá para indicar caminhos de material aqui.</p></div>
+      <div class="step"><span class="num">02</span><h3>Escolha do material</h3><p>Definimos junto entre mármore, granito, quartzo ou lâmina ultracompacta, considerando uso, ambiente e o quanto você quer de manutenção depois.</p></div>
+      <div class="step"><span class="num">03</span><h3>Medição no local</h3><p>A medição é feita na obra, com os móveis e pontos hidráulicos já definidos. É ela que garante que a peça encaixe de primeira.</p></div>
+      <div class="step"><span class="num">04</span><h3>Orçamento e prazo fechados</h3><p>Valor e prazo de entrega definidos antes de a produção começar. O que foi combinado é o que vale.</p></div>
+      <div class="step"><span class="num">05</span><h3>Produção, entrega e instalação</h3><p>Corte, acabamento e finalização na fábrica. Você recebe a bancada pronta e instalada, e o atendimento continua depois disso.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= REGIÕES ======================= -->
+<section class="sec light" id="regioes">
+  <div class="wrap">
+    <div class="two">
+      <div class="rv">
+        <p class="eyebrow">Onde atendemos</p>
+        <h2>Americana, Santa Bárbara d'Oeste e São Paulo capital.</h2>
+        <p class="lead">A fábrica fica em Americana, no interior de São Paulo, e é de lá que sai cada peça. Atendemos a região e também obras na capital.</p>
+        <p>Para obras em São Paulo capital o caminho é o mesmo: medição feita no local, produção na nossa fábrica e entrega com a peça instalada. Quem coordena o seu atendimento aqui é quem acompanha a obra até o fim, independente da distância.</p>
+        <p>Atendemos clientes finais, construtores e arquitetos.</p>
+        <p style="margin-bottom:0"><a class="btn btn-p js-lead" href="https://wa.me/5519996273192?text=Ol%C3%A1%2C%20minha%20obra%20fica%20em..." target="_blank" rel="noopener" data-local="regioes">Consultar atendimento para a minha obra</a></p>
+      </div>
+      <figure class="rv" style="margin:0">
+        <!-- ========== [E] IMAGEM: regiões ========== -->
+        <img src="img/bancada-granito-verde-longa.webp" alt="Bancada longa de granito escuro instalada com cuba inox em cozinha" width="1080" height="1080" loading="lazy" style="aspect-ratio:1/1;object-fit:cover;width:100%">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= OBRAS / GALERIA ======================= -->
+<section class="sec light-2">
+  <div class="wrap">
+    <div class="hd rv">
+      <p class="eyebrow">Obras</p>
+      <h2>Peças da JMF, da chapa ao ambiente pronto.</h2>
+      <p class="lead">Registros reais de obras executadas, incluindo as etapas de instalação. É assim que a peça chega e é assim que ela fica.</p>
+    </div>
+    <div class="gal rv">
+      <!-- ========== [E] IMAGENS: galeria de obras. Substitua ou acrescente conforme novas fotos ========== -->
+      <button class="zoom" type="button" data-full="img/bancada-preta-cooktop.webp" data-cap="Bancada preta com cooktop e cuba, vista de cima" aria-label="Ampliar foto: Bancada preta com cooktop e cuba, vista de cima"><img src="img/bancada-preta-cooktop.webp" alt="Bancada preta com cooktop e cuba, vista de cima" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/lavatorio-branco-marmore.webp" data-cap="Lavatório com bancada clara e cuba de apoio branca" aria-label="Ampliar foto: Lavatório com bancada clara e cuba de apoio branca"><img src="img/lavatorio-branco-marmore.webp" alt="Lavatório com bancada clara e cuba de apoio branca" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/bancada-banheiro-slim.webp" data-cap="Bancada de banheiro em superfície branca com cuba esculpida" aria-label="Ampliar foto: Bancada de banheiro em superfície branca com cuba esculpida"><img src="img/bancada-banheiro-slim.webp" alt="Bancada de banheiro em superfície branca com cuba esculpida" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/lavatorio-branco-suspenso.webp" data-cap="Cuba esculpida em bancada branca suspensa" aria-label="Ampliar foto: Cuba esculpida em bancada branca suspensa"><img src="img/lavatorio-branco-suspenso.webp" alt="Cuba esculpida em bancada branca suspensa" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/lavatorio-duplo-detalhe.webp" data-cap="Detalhe de bancada clara com duas cubas de apoio em banheiro" aria-label="Ampliar foto: Detalhe de bancada clara com duas cubas de apoio em banheiro"><img src="img/lavatorio-duplo-detalhe.webp" alt="Detalhe de bancada clara com duas cubas de apoio em banheiro" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/bancada-granito-cooktop.webp" data-cap="Bancada de granito escuro com cooktop e cuba instalada" aria-label="Ampliar foto: Bancada de granito escuro com cooktop e cuba instalada"><img src="img/bancada-granito-cooktop.webp" alt="Bancada de granito escuro com cooktop e cuba instalada" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/bancada-granito-cuba-dupla.webp" data-cap="Bancada de granito com cuba dupla instalada durante a obra" aria-label="Ampliar foto: Bancada de granito com cuba dupla instalada durante a obra"><img src="img/bancada-granito-cuba-dupla.webp" alt="Bancada de granito com cuba dupla instalada durante a obra" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/lavatorio-granito-verde.webp" data-cap="Bancada de banheiro em granito escuro com cuba de apoio branca" aria-label="Ampliar foto: Bancada de banheiro em granito escuro com cuba de apoio branca"><img src="img/lavatorio-granito-verde.webp" alt="Bancada de banheiro em granito escuro com cuba de apoio branca" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/lavatorio-granito-cuba-apoio.webp" data-cap="Bancada de canto em granito escuro com cuba de apoio" aria-label="Ampliar foto: Bancada de canto em granito escuro com cuba de apoio"><img src="img/lavatorio-granito-cuba-apoio.webp" alt="Bancada de canto em granito escuro com cuba de apoio" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/bancada-granito-pes-madeira.webp" data-cap="Bancada de granito escuro apoiada em pés de madeira com cooktop" aria-label="Ampliar foto: Bancada de granito escuro apoiada em pés de madeira com cooktop"><img src="img/bancada-granito-pes-madeira.webp" alt="Bancada de granito escuro apoiada em pés de madeira com cooktop" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/bancada-area-servico.webp" data-cap="Bancada de área de serviço com cuba e tanque instalados" aria-label="Ampliar foto: Bancada de área de serviço com cuba e tanque instalados"><img src="img/bancada-area-servico.webp" alt="Bancada de área de serviço com cuba e tanque instalados" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/mesa-giratoria-marmore.webp" data-cap="Peça giratória de pedra sobre mesa posta" aria-label="Ampliar foto: Peça giratória de pedra sobre mesa posta"><img src="img/mesa-giratoria-marmore.webp" alt="Peça giratória de pedra sobre mesa posta" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/mesa-giratoria-detalhe.webp" data-cap="Detalhe de peça giratória de pedra com arranjo de flores" aria-label="Ampliar foto: Detalhe de peça giratória de pedra com arranjo de flores"><img src="img/mesa-giratoria-detalhe.webp" alt="Detalhe de peça giratória de pedra com arranjo de flores" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/chapa-parede-marmore.webp" data-cap="Chapa de pedra bege posicionada para revestimento de parede" aria-label="Ampliar foto: Chapa de pedra bege posicionada para revestimento de parede"><img src="img/chapa-parede-marmore.webp" alt="Chapa de pedra bege posicionada para revestimento de parede" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/ilha-cozinha-obra.webp" data-cap="Ilha de cozinha em superfície clara instalada durante a obra" aria-label="Ampliar foto: Ilha de cozinha em superfície clara instalada durante a obra"><img src="img/ilha-cozinha-obra.webp" alt="Ilha de cozinha em superfície clara instalada durante a obra" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/peca-lateral-acabamento.webp" data-cap="Detalhe da lateral e do acabamento de uma peça clara" aria-label="Ampliar foto: Detalhe da lateral e do acabamento de uma peça clara"><img src="img/peca-lateral-acabamento.webp" alt="Detalhe da lateral e do acabamento de uma peça clara" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= INDICAÇÃO / PROVA ======================= -->
+<section class="sec dark">
+  <div class="wrap">
+    <div class="two">
+      <div class="rv">
+        <p class="eyebrow">Reputação</p>
+        <h2>Quinze anos crescendo por indicação.</h2>
+      </div>
+      <div class="rv">
+        <p class="lead">A JMF nunca dependeu de anúncio para trabalhar. A maior parte das obras sempre chegou por indicação de clientes, construtores e arquitetos que já viram o resultado de perto.</p>
+        <p>Indicação é o tipo de prova que ninguém compra: ela só acontece quando a bancada ficou certa, o prazo foi cumprido e o atendimento continuou depois da instalação.</p>
+      </div>
+    </div>
+
+    <!--
+    ========== [F] DEPOIMENTOS: SUBSTITUIR PELOS DEPOIMENTOS REAIS ==========
+    O cliente ainda não enviou link do Google Meu Negócio nem prints.
+    Assim que chegarem, descomente este bloco e preencha de 4 a 6 cards.
+    Estrutura pronta:
+
+    <div class="apps" style="margin-top:56px">
+      <article class="app plain">
+        <p>“Texto real do depoimento.”</p>
+        <h3 style="font-size:1rem">Nome do cliente</h3>
+        <p style="font-size:.85rem">Cidade . Material aplicado</p>
+      </article>
+      (repetir)
+    </div>
+    ========== FIM [F] ==========
+    -->
+  </div>
+</section>
+
+<!-- ======================= FAQ ======================= -->
+<section class="sec light" id="perguntas">
+  <div class="wrap">
+    <div class="hd rv">
+      <p class="eyebrow">Perguntas frequentes</p>
+      <h2>O que perguntam antes de fechar.</h2>
+    </div>
+    <div class="faq rv">
+      <details open>
+        <summary>Vocês atendem São Paulo capital mesmo ficando em Americana?</summary>
+        <div class="a"><p>Sim. A fábrica fica em Americana e atendemos Americana, Santa Bárbara d'Oeste e São Paulo capital. A medição é feita na sua obra, a peça é produzida aqui e entregue instalada.</p></div>
+      </details>
+      <details>
+        <summary>Vocês só entregam a peça ou fazem a instalação?</summary>
+        <div class="a"><p>Entregamos a bancada pronta e instalada. Essa é a entrega da JMF: você não fica com a peça na obra esperando alguém para colocar.</p></div>
+      </details>
+      <details>
+        <summary>Qual a diferença entre quartzo, mármore e granito para a minha cozinha?</summary>
+        <div class="a"><p>O quartzo é uma superfície de engenharia com cor uniforme e manutenção simples, boa para quem quer bancada clara sem variação de veio. O granito é pedra natural e o mais resistente para uso pesado, calor e área externa. O mármore é pedra natural de veio marcado e visual único, mais indicado para lavatórios, painéis, mesas, soleiras e peitoris do que para uma cozinha de uso intenso.</p></div>
+      </details>
+      <details>
+        <summary>Quartzo mancha?</summary>
+        <div class="a"><p>O quartzo é bem menos poroso que as pedras naturais, então resiste bem a manchas do dia a dia. O cuidado principal é limpar derramamentos de produtos agressivos e evitar exposição direta e prolongada ao sol.</p></div>
+      </details>
+      <details>
+        <summary>Vocês trabalham com material importado?</summary>
+        <div class="a"><p>Sim. Trabalhamos com todos os tipos de materiais, nacionais ou importados: mármores, granitos, quartzos e lâminas ultracompactas.</p></div>
+      </details>
+      <details>
+        <summary>Posso ver o material antes de fechar?</summary>
+        <div class="a"><p>Pode. A escolha do material faz parte do processo, antes do fechamento do orçamento. Chame no WhatsApp para combinar.</p></div>
+      </details>
+      <details>
+        <summary>Quanto custa uma bancada?</summary>
+        <div class="a"><p>Depende do material escolhido, da metragem, dos recortes e do tipo de acabamento de borda. Por isso o orçamento é feito depois da medição: assim o valor que você recebe é o valor final, não uma estimativa que muda depois.</p></div>
+      </details>
+      <details>
+        <summary>Quais são os horários de atendimento?</summary>
+        <div class="a"><p>De segunda a sexta, das 8h às 18h, e aos sábados das 8h às 12h. Pelo WhatsApp você pode mandar a mensagem a qualquer momento que respondemos no horário comercial.</p></div>
+      </details>
+      <details>
+        <summary>Além de bancadas, o que mais vocês fazem?</summary>
+        <div class="a"><p>Marmoraria em geral: pias de cozinha, área gourmet, lavatórios, painéis, nichos, mesas, soleiras e peitoris, tudo sob medida.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CTA FINAL ======================= -->
+<section class="sec dark grain">
+  <div class="wrap cta-final">
+    <div class="rv">
+      <p class="eyebrow" style="justify-content:center">Orçamento</p>
+      <h2>Mande as medidas da sua obra e vamos conversar.</h2>
+      <p class="lead">Atendimento direto com quem produz. Você conta o ambiente, a gente indica o material e fecha valor e prazo antes de qualquer coisa começar.</p>
+      <div class="cta-box">
+        <a class="btn btn-p js-lead" href="https://wa.me/5519996273192?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20de%20bancada%20com%20a%20Marmoraria%20JMF." target="_blank" rel="noopener" data-local="cta-final">Pedir orçamento no WhatsApp</a>
+        <a class="btn btn-g" href="https://www.instagram.com/marmorariajmf/" target="_blank" rel="noopener">Ver o Instagram</a>
+      </div>
+      <p class="horario">Segunda a sexta, 8h às 18h . Sábado, 8h às 12h</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <!-- ========== [G] LOGO: SUBSTITUIR SE HOUVER VERSÃO OFICIAL EM VETOR ========== -->
+        <img src="img/logo-jmf-claro.png" alt="Marmoraria JMF" width="139" height="129">
+        <p>Marmoraria em geral, sob medida, há 15 anos. Mármores nacionais e importados, granitos, quartzos e lâminas ultracompactas.</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a class="js-lead" href="https://wa.me/5519996273192" target="_blank" rel="noopener" data-local="rodape">WhatsApp (19) 99627 3192</a></li>
+          <li><a href="mailto:marmoraria.jmf@hotmail.com">marmoraria.jmf@hotmail.com</a></li>
+          <li><a href="https://www.instagram.com/marmorariajmf/" target="_blank" rel="noopener">@marmorariajmf</a></li>
+        </ul>
+        <h4 style="margin-top:24px">Atendimento</h4>
+        <ul>
+          <li>Segunda a sexta, 8h às 18h</li>
+          <li>Sábado, 8h às 12h</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Onde atendemos</h4>
+        <ul>
+          <li>Americana, SP</li>
+          <li>Santa Bárbara d'Oeste, SP</li>
+          <li>São Paulo capital</li>
+        </ul>
+        <h4 style="margin-top:24px">Empresa</h4>
+        <ul>
+          <!-- ========== [H] CNPJ / ENDEREÇO: PREENCHER ========== -->
+          <li>CNPJ: 00.000.000/0000-00</li>
+          <li>Endereço: preencher</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-base">
+      <span>Marmoraria JMF . Todos os direitos reservados</span>
+      <span>Feito por QH4 Growth</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wpp js-lead" href="https://wa.me/5519996273192?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20de%20bancada%20com%20a%20Marmoraria%20JMF." target="_blank" rel="noopener" aria-label="Falar com a Marmoraria JMF no WhatsApp" data-local="flutuante">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.6 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.8.7.8.2 1.5.2 2 .1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2m0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2"/></svg>
+</a>
+
+
+<!-- ======================= LIGHTBOX (galeria em tela cheia) ======================= -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button class="lb-btn lb-close" id="lbClose" type="button" aria-label="Fechar">
+    <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button class="lb-btn lb-prev" id="lbPrev" type="button" aria-label="Foto anterior">
+    <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <button class="lb-btn lb-next" id="lbNext" type="button" aria-label="Próxima foto">
+    <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+  </button>
+  <figure class="lb-fig">
+    <img id="lbImg" src="" alt="">
+    <figcaption class="lb-cap"><span id="lbCap"></span><span class="lb-count" id="lbCount"></span></figcaption>
+  </figure>
+</div>
+
+<!-- ======================= JSON-LD ======================= -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Marmoraria JMF",
+  "description":"Marmoraria com 15 anos de mercado em Americana, SP. Bancadas, pias de cozinha, área gourmet, lavatórios, painéis, nichos, mesas, soleiras e peitoris em mármore, granito, quartzo e lâmina ultracompacta, entregues prontos e instalados.",
+  "url":"https://www.marmorariajmf.com.br/",
+  "image":"https://www.marmorariajmf.com.br/img/ilha-cozinha-branca-cooktop.webp",
+  "telephone":"+5519996273192",
+  "email":"marmoraria.jmf@hotmail.com",
+  "sameAs":["https://www.instagram.com/marmorariajmf/"],
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"PREENCHER",
+    "addressLocality":"Americana",
+    "addressRegion":"SP",
+    "postalCode":"PREENCHER",
+    "addressCountry":"BR"
+  },
+  "areaServed":[
+    {"@type":"City","name":"Americana"},
+    {"@type":"City","name":"Santa Bárbara d'Oeste"},
+    {"@type":"City","name":"São Paulo"}
+  ],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"08:00","closes":"12:00"}
+  ],
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bancada de cozinha sob medida"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Área gourmet"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Lavatórios"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Painéis e nichos"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mesas"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Soleiras e peitoris"}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Vocês atendem São Paulo capital mesmo ficando em Americana?","acceptedAnswer":{"@type":"Answer","text":"Sim. A fábrica fica em Americana e atendemos Americana, Santa Bárbara d'Oeste e São Paulo capital. A medição é feita na obra, a peça é produzida na fábrica e entregue instalada."}},
+    {"@type":"Question","name":"Vocês só entregam a peça ou fazem a instalação?","acceptedAnswer":{"@type":"Answer","text":"A Marmoraria JMF entrega a bancada pronta e instalada."}},
+    {"@type":"Question","name":"Qual a diferença entre quartzo, mármore e granito para a cozinha?","acceptedAnswer":{"@type":"Answer","text":"O quartzo é uma superfície de engenharia com cor uniforme e manutenção simples. O granito é pedra natural e o mais resistente para uso pesado, calor e área externa. O mármore é pedra natural de veio marcado, mais indicado para lavatórios, painéis, mesas, soleiras e peitoris do que para cozinhas de uso intenso."}},
+    {"@type":"Question","name":"Quartzo mancha?","acceptedAnswer":{"@type":"Answer","text":"O quartzo é bem menos poroso que as pedras naturais e resiste bem a manchas do dia a dia. O cuidado principal é limpar derramamentos de produtos agressivos e evitar exposição direta e prolongada ao sol."}},
+    {"@type":"Question","name":"Vocês trabalham com material importado?","acceptedAnswer":{"@type":"Answer","text":"Sim. A JMF trabalha com todos os tipos de materiais, nacionais ou importados: mármores, granitos, quartzos e lâminas ultracompactas."}},
+    {"@type":"Question","name":"Quanto custa uma bancada?","acceptedAnswer":{"@type":"Answer","text":"O valor depende do material, da metragem, dos recortes e do acabamento de borda. O orçamento é fechado depois da medição na obra."}},
+    {"@type":"Question","name":"Quais são os horários de atendimento?","acceptedAnswer":{"@type":"Answer","text":"De segunda a sexta das 8h às 18h e aos sábados das 8h às 12h."}},
+    {"@type":"Question","name":"Além de bancadas, o que mais a JMF faz?","acceptedAnswer":{"@type":"Answer","text":"Marmoraria em geral: pias de cozinha, área gourmet, lavatórios, painéis, nichos, mesas, soleiras e peitoris, tudo sob medida."}}
+  ]
+}
+</script>
+
+<script>
+/* ---------- header ---------- */
+var hdr=document.getElementById('hdr');
+var onScroll=function(){ hdr.classList.toggle('stuck', window.scrollY>40); };
+onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+/* ---------- menu mobile ---------- */
+var burger=document.getElementById('burger'), nav=document.getElementById('nav');
+burger.addEventListener('click', function(){
+  var open=nav.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open?'true':'false');
+  burger.setAttribute('aria-label', open?'Fechar menu':'Abrir menu');
+});
+nav.addEventListener('click', function(e){
+  if(e.target.tagName==='A'){ nav.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }
+});
+
+/* ---------- reveal on scroll ---------- */
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var items=document.querySelectorAll('.rv');
+if(reduce||!('IntersectionObserver' in window)){
+  items.forEach(function(el){el.classList.add('in');});
+}else{
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  },{rootMargin:'0px 0px -8% 0px',threshold:.12});
+  items.forEach(function(el){io.observe(el);});
+}
+
+/* ---------- [D] disparo de conversão nos cliques de WhatsApp ---------- */
+function trackLead(local){
+  /* GTM / GA4 */
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({event:'clique_whatsapp', local_do_clique: local});
+
+  /* Google Ads: descomente e troque AW-XXXXXXXXX/LABEL_DA_CONVERSAO
+  if(typeof gtag==='function'){
+    gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/LABEL_DA_CONVERSAO'});
+  }
+  */
+
+  /* Meta Pixel: descomente ao ativar o pixel
+  if(typeof fbq==='function'){ fbq('track','Contact',{content_name: local}); }
+  */
+}
+document.querySelectorAll('.js-lead').forEach(function(el){
+  el.addEventListener('click', function(){ trackLead(el.dataset.local||'nao-identificado'); });
+});
+
+/* ---------- lightbox da galeria e do portfólio ---------- */
+(function(){
+  var zooms=Array.prototype.slice.call(document.querySelectorAll('.zoom'));
+  if(!zooms.length) return;
+  var lb=document.getElementById('lb'), img=document.getElementById('lbImg'),
+      cap=document.getElementById('lbCap'), count=document.getElementById('lbCount'),
+      bClose=document.getElementById('lbClose'), bPrev=document.getElementById('lbPrev'),
+      bNext=document.getElementById('lbNext');
+  var i=0, last=null;
+
+  function render(){
+    var b=zooms[i];
+    img.src=b.dataset.full;
+    img.alt=b.dataset.cap||'';
+    cap.textContent=b.dataset.cap||'';
+    count.textContent=(i+1)+' de '+zooms.length;
+  }
+  function open(idx){
+    i=idx; last=document.activeElement; render();
+    lb.classList.add('on'); document.body.classList.add('lb-open');
+    requestAnimationFrame(function(){ lb.classList.add('vis'); });
+    bClose.focus();
+  }
+  function close(){
+    lb.classList.remove('vis');
+    setTimeout(function(){ lb.classList.remove('on'); img.src=''; }, 220);
+    document.body.classList.remove('lb-open');
+    if(last) last.focus();
+  }
+  function go(step){ i=(i+step+zooms.length)%zooms.length; render(); }
+
+  zooms.forEach(function(b,idx){ b.addEventListener('click', function(){ open(idx); }); });
+  bClose.addEventListener('click', close);
+  bPrev.addEventListener('click', function(){ go(-1); });
+  bNext.addEventListener('click', function(){ go(1); });
+  lb.addEventListener('click', function(e){ if(e.target===lb||e.target.classList.contains('lb-fig')) close(); });
+  document.addEventListener('keydown', function(e){
+    if(!lb.classList.contains('on')) return;
+    if(e.key==='Escape') close();
+    else if(e.key==='ArrowLeft') go(-1);
+    else if(e.key==='ArrowRight') go(1);
+    else if(e.key==='Tab'){
+      var f=[bClose,bPrev,bNext];
+      if(f.indexOf(document.activeElement)===-1){ e.preventDefault(); bClose.focus(); }
+    }
+  });
+  /* arrastar para trocar de foto no toque */
+  var x0=null;
+  lb.addEventListener('touchstart', function(e){ x0=e.changedTouches[0].clientX; }, {passive:true});
+  lb.addEventListener('touchend', function(e){
+    if(x0===null) return;
+    var d=e.changedTouches[0].clientX-x0;
+    if(Math.abs(d)>50) go(d<0?1:-1);
+    x0=null;
+  }, {passive:true});
+})();
+</script>
+</body>
+</html>
