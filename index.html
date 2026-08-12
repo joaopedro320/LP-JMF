@@ -57,7 +57,7 @@ fbq('init','SEU_PIXEL_ID');fbq('track','PageView');
 <!-- ========== FIM [D] ========== -->
 
 <title>Marmoraria JMF | Bancadas em mármore, granito e quartzo sob medida em Americana e São Paulo</title>
-<meta name="description" content="Marmoraria com 15 anos de mercado em Americana, SP. Bancadas de cozinha, ilhas, área gourmet, lavatórios, painéis, nichos, mesas, soleiras e peitoris em mármore, granito, quartzo e lâmina ultracompacta. Peça pronta e instalada. Atendemos Americana, Santa Bárbara d'Oeste e São Paulo capital.">
+<meta name="description" content="Marmoraria com 15 anos de mercado em Americana, SP. Bancadas de cozinha, ilhas, área gourmet, lavatórios, painéis, nichos, mesas, soleiras e peitoris em mármore, granito, quartzo e lâmina ultracompacta. Peça pronta e instalada. Atendemos Americana, a região de Campinas e São Paulo capital.">
 <meta name="robots" content="index, follow">
 <!-- [I] Ajuste o domínio final -->
 <link rel="canonical" href="https://www.marmorariajmf.com.br/">
@@ -66,12 +66,12 @@ fbq('init','SEU_PIXEL_ID');fbq('track','PageView');
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Marmoraria JMF">
 <meta property="og:title" content="Marmoraria JMF | Bancadas sob medida, prontas e instaladas">
-<meta property="og:description" content="15 anos em mármore, granito, quartzo e lâmina ultracompacta. Americana, Santa Bárbara d'Oeste e São Paulo capital.">
+<meta property="og:description" content="15 anos em mármore, granito, quartzo e lâmina ultracompacta. Americana, região de Campinas e São Paulo capital.">
 <meta property="og:url" content="https://www.marmorariajmf.com.br/">
 <meta property="og:image" content="https://www.marmorariajmf.com.br/img/ilha-cozinha-branca-cooktop.webp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Marmoraria JMF | Bancadas sob medida, prontas e instaladas">
-<meta name="twitter:description" content="15 anos em mármore, granito, quartzo e lâmina ultracompacta. Americana, Santa Bárbara d'Oeste e São Paulo capital.">
+<meta name="twitter:description" content="15 anos em mármore, granito, quartzo e lâmina ultracompacta. Americana, região de Campinas e São Paulo capital.">
 <meta name="twitter:image" content="https://www.marmorariajmf.com.br/img/ilha-cozinha-branca-cooktop.webp">
 <meta name="theme-color" content="#17150F">
 
@@ -262,18 +262,65 @@ h2 + .lead,h2 + p{margin-top:20px}
 .args p{margin:0;color:var(--text-soft);font-size:1rem}
 
 /* materiais */
-.mat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark)}
-.mat{background:var(--ink);padding:clamp(26px,3vw,40px)}
-.mat.wide{grid-column:1 / -1;display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,4vw,52px);align-items:center}
-.mat figure{margin:0}
-.mat img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
-.mat.wide img{aspect-ratio:1/1;height:auto}
-.mat .tag{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--roxo-claro);display:block;margin-bottom:14px}
-.mat h3{color:#fff;margin-bottom:14px}
-.mat dl{margin:20px 0 0;border-top:1px solid var(--line-dark);font-size:.95rem}
-.mat dt{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-onink-soft);padding-top:14px}
-.mat dd{margin:2px 0 14px;color:#DCD6C9}
-@media(max-width:860px){.mat-grid{grid-template-columns:1fr}.mat.wide{grid-template-columns:1fr}}
+/* --- SELETOR DE MATERIAIS (sem fotos, superfícies desenhadas em CSS) --- */
+.msel{display:grid;grid-template-columns:.85fr 1.15fr;gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);margin-top:clamp(34px,5vw,56px)}
+.msel-nav{background:var(--ink);display:flex;flex-direction:column}
+.msel-btn{all:unset;cursor:pointer;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;
+  padding:clamp(18px,2.2vw,26px) clamp(18px,2.4vw,30px);border-bottom:1px solid var(--line-dark);transition:background .25s ease}
+.msel-btn:last-child{border-bottom:0}
+.msel-btn:hover{background:var(--ink-2)}
+.msel-btn:focus-visible{outline:2px solid var(--roxo-claro);outline-offset:-2px}
+.msel-btn[aria-selected="true"]{background:var(--ink-2);box-shadow:inset 3px 0 0 var(--roxo-claro)}
+.msel-btn .sw{width:clamp(44px,5vw,58px);aspect-ratio:1;border:1px solid var(--line-dark);position:relative;overflow:hidden;filter:saturate(.9)}
+.msel-btn .nm{font-family:"Fraunces",Georgia,serif;font-size:clamp(1.05rem,1.6vw,1.3rem);color:#fff;line-height:1.15}
+.msel-btn .nm small{display:block;font-family:"Inter Tight",sans-serif;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text-onink-soft);margin-top:6px}
+.msel-btn .ar{color:var(--text-onink-soft);font-size:.8rem;opacity:0;transform:translateX(-6px);transition:.25s ease}
+.msel-btn[aria-selected="true"] .ar{opacity:1;transform:none;color:var(--roxo-claro)}
+.msel-panels{background:var(--ink);padding:clamp(26px,3.4vw,48px)}
+.msel-panel[hidden]{display:none}
+.msel-panel{animation:mfade .45s ease both}
+@keyframes mfade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.msel-panel{animation:none}}
+.msel-panel .tag{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--roxo-claro);display:block;margin-bottom:12px}
+.msel-panel h3{color:#fff;font-size:clamp(1.7rem,3vw,2.4rem);margin-bottom:14px}
+.msel-panel p{color:var(--text-onink-soft)}
+.msel-band{height:64px;border:1px solid var(--line-dark);margin:22px 0 26px;position:relative;overflow:hidden}
+.msel-meta{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 30px;margin:24px 0 0;border-top:1px solid var(--line-dark);padding-top:22px}
+.msel-meta div{min-width:0}
+.msel-meta dt{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-onink-soft);margin-bottom:6px}
+.msel-meta dd{margin:0;color:#DCD6C9;font-size:.95rem;line-height:1.5}
+.msel-bars{display:grid;gap:12px;margin-top:24px;border-top:1px solid var(--line-dark);padding-top:22px}
+.msel-bar{display:grid;grid-template-columns:150px 1fr;align-items:center;gap:16px}
+.msel-bar span{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-onink-soft)}
+.msel-bar i{display:block;height:5px;background:var(--line-dark);position:relative}
+.msel-bar i::after{content:"";position:absolute;inset:0 auto 0 0;width:var(--v);background:var(--roxo-claro)}
+/* superfícies desenhadas */
+.s-quartzo{background:linear-gradient(150deg,#F6F4EF,#E9E5DC 60%,#F2EFE9)}
+.s-marmore{background:
+  linear-gradient(115deg,transparent 46%,rgba(120,110,95,.5) 47%,transparent 49%),
+  linear-gradient(100deg,transparent 62%,rgba(120,110,95,.32) 63%,transparent 66%),
+  linear-gradient(160deg,transparent 28%,rgba(140,130,112,.28) 29%,transparent 32%),
+  linear-gradient(140deg,#FBF9F5,#EDE7DA)}
+.s-granito{background:
+  radial-gradient(circle at 20% 30%,rgba(255,255,255,.5) 0 1px,transparent 2px),
+  radial-gradient(circle at 62% 18%,rgba(255,255,255,.35) 0 1px,transparent 2px),
+  radial-gradient(circle at 78% 66%,rgba(255,255,255,.45) 0 1px,transparent 2px),
+  radial-gradient(circle at 35% 78%,rgba(255,255,255,.3) 0 1px,transparent 2px),
+  radial-gradient(circle at 8% 62%,rgba(255,255,255,.28) 0 1px,transparent 2px),
+  linear-gradient(150deg,#3A3B36,#25261F);background-size:26px 26px,34px 34px,30px 30px,22px 22px,40px 40px,100% 100%}
+.s-lamina{background:linear-gradient(180deg,#EFEDE7,#DCD8CE 48%,#EFEDE7);
+  box-shadow:inset 0 -1px 0 rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.6)}
+.msel-band.s-marmore,.msel-band.s-granito{background-size:auto,auto,auto,auto,auto,auto}
+@media(max-width:860px){
+  .msel{grid-template-columns:1fr}
+  .msel-nav{flex-direction:row;overflow-x:auto;scrollbar-width:none}
+  .msel-nav::-webkit-scrollbar{display:none}
+  .msel-btn{grid-template-columns:auto 1fr;border-bottom:0;border-right:1px solid var(--line-dark);flex:0 0 auto;gap:12px}
+  .msel-btn[aria-selected="true"]{box-shadow:inset 0 -3px 0 var(--roxo-claro)}
+  .msel-btn .ar{display:none}
+  .msel-meta{grid-template-columns:1fr}
+  .msel-bar{grid-template-columns:120px 1fr}
+}
 
 /* aplicações */
 .apps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,26px)}
@@ -420,8 +467,6 @@ body.lb-open{overflow:hidden}
 @media(max-width:1000px){
   body{font-size:16.5px}
   .mat-grid{grid-template-columns:1fr}
-  .mat.wide{grid-template-columns:1fr;gap:26px}
-  .mat.wide figure{max-width:520px;margin-inline:auto;width:100%}
   .two figure{margin-inline:auto}
   .apps{grid-template-columns:repeat(2,1fr)}
   .two{grid-template-columns:1fr;gap:36px}
@@ -440,7 +485,7 @@ body.lb-open{overflow:hidden}
 /* mobile */
 @media(max-width:600px){
   body{font-size:16px;line-height:1.6}
-  .two figure,.mat.wide figure{max-width:100%}
+  .two figure{max-width:100%}
   .hero-fig{margin-inline:calc(var(--pad)*-1);max-width:100vw}
   h1{font-size:clamp(2.05rem,9vw,2.9rem)}
   h2{font-size:clamp(1.7rem,7.4vw,2.3rem)}
@@ -513,7 +558,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <p class="eyebrow">Americana, Santa Bárbara d'Oeste e São Paulo capital</p>
         <h1>Marmoraria de alto padrão <em>perto de você.</em></h1>
         <p class="lead">São 15 anos cortando mármore, granito, quartzo e lâmina sob medida. A bancada não termina na pedra: você recebe a peça pronta, instalada e conferida, com a mesma pessoa te atendendo antes, durante e depois da venda.</p>
         <div class="hero-cta">
@@ -536,8 +580,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <div class="cred"><b>15 anos</b><span>de mercado</span></div>
     <div class="cred"><b>Familiar</b><span>produção e venda na mesma casa</span></div>
-    <div class="cred"><b>Indicação</b><span>a origem da maior parte das obras</span></div>
-    <div class="cred"><b>SP capital</b><span>além de Americana e Santa Bárbara</span></div>
+    <div class="cred"><b>Satisfação</b><span>nossos clientes são a nossa maior vitrine</span></div>
+    <div class="cred"><b>SP capital</b><span>região de Campinas e capital</span></div>
   </div>
 </div>
 
@@ -567,15 +611,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <div class="about-grid">
       <figure class="about-figure rv">
-        <!-- Foto real de obra JMF, recortada para acompanhar a altura do texto -->
-        <img src="img/quem-somos-jmf.webp" alt="Ilha e bancada em granito executadas pela Marmoraria JMF" width="926" height="1080" loading="lazy">
+        <!-- ========== [E] IMAGEM: destaque "quem faz". Trocada a pedido do Diego. Ideal: foto vertical da fábrica ou da equipe ========== -->
+        <img src="img/bancada-branca-apoio.webp" alt="Bancada em L com superfície clara e prolongamento em balcão, obra entregue pela Marmoraria JMF" width="1080" height="1080" loading="lazy">
       </figure>
       <div class="about-copy rv">
         <p class="eyebrow">Quem faz</p>
         <h2>Uma marmoraria de família, com o dono dentro da fábrica.</h2>
         <p class="lead">A JMF está há 15 anos no mercado, em Americana. É uma empresa familiar e enxuta: o Fábio cuida da produção e está na pedra desde os 12 anos de idade, a Gisele cuida das vendas e do escritório, os dois filhos do casal trabalham junto e mais dois funcionários completam a equipe.</p>
         <p>Isso muda uma coisa prática: a peça que sai daqui passou pela mão de quem é dono do negócio. Não existe camada de intermediário entre quem vende e quem corta.</p>
-        <p>A maior parte das obras chega por indicação de quem já foi cliente, de construtores e de arquitetos. É esse padrão que a gente entrega também para quem nos encontra pela primeira vez.</p>
+        <p>Atendemos cliente final, construtor e arquiteto com o mesmo padrão: material de primeira, acabamento conferido peça por peça e prazo cumprido. A satisfação de quem compra é o que sustenta a JMF há 15 anos.</p>
         <p style="margin-bottom:0"><a class="btn btn-g js-lead" href="https://wa.me/5519996273192?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20a%20Marmoraria%20JMF." target="_blank" rel="noopener" data-local="empresa">Conversar com a JMF</a></p>
       </div>
     </div>
@@ -591,69 +635,103 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="lead">Cada material resolve um problema diferente. Abaixo, o que considerar antes de escolher a superfície da sua cozinha, do seu lavatório ou da sua área gourmet.</p>
     </div>
 
-    <div class="mat-grid rv">
-      <article class="mat wide">
-        <figure>
-          <!-- ========== [E] IMAGEM: material quartzo ========== -->
-          <img src="img/lavatorio-branco-gabinete.webp" alt="Lavatório em superfície branca com cuba esculpida e gabinete cinza" width="1080" height="1080" loading="lazy">
-        </figure>
-        <div>
-          <span class="tag">Destaque</span>
-          <h3>Quartzo</h3>
-          <p>Superfície de engenharia com alta densidade e cor uniforme de ponta a ponta. É a escolha de quem quer previsibilidade: a peça instalada é igual à amostra vista no orçamento.</p>
-          <dl>
-            <dt>Onde vai melhor</dt><dd>Bancada de cozinha, ilha, lavatório e área gourmet de uso intenso.</dd>
-            <dt>Ponto de atenção</dt><dd>Não é indicado para exposição direta e permanente ao sol.</dd>
-            <dt>Indicado para</dt><dd>Quem quer superfície clara sem sustos de veio e com manutenção simples.</dd>
-          </dl>
+    <!-- Seletor de materiais: superfícies desenhadas em CSS, sem fotos -->
+    <div class="msel rv">
+      <div class="msel-nav" role="tablist" aria-label="Materiais trabalhados pela JMF">
+        <button class="msel-btn" role="tab" id="tab-quartzo" aria-controls="pn-quartzo" aria-selected="true" tabindex="0" type="button">
+          <span class="sw s-quartzo" aria-hidden="true"></span>
+          <span class="nm">Quartzo<small>Superfície de engenharia</small></span>
+          <span class="ar" aria-hidden="true">&#9656;</span>
+        </button>
+        <button class="msel-btn" role="tab" id="tab-marmore" aria-controls="pn-marmore" aria-selected="false" tabindex="-1" type="button">
+          <span class="sw s-marmore" aria-hidden="true"></span>
+          <span class="nm">Mármore<small>Pedra natural</small></span>
+          <span class="ar" aria-hidden="true">&#9656;</span>
+        </button>
+        <button class="msel-btn" role="tab" id="tab-granito" aria-controls="pn-granito" aria-selected="false" tabindex="-1" type="button">
+          <span class="sw s-granito" aria-hidden="true"></span>
+          <span class="nm">Granito<small>Pedra natural</small></span>
+          <span class="ar" aria-hidden="true">&#9656;</span>
+        </button>
+        <button class="msel-btn" role="tab" id="tab-lamina" aria-controls="pn-lamina" aria-selected="false" tabindex="-1" type="button">
+          <span class="sw s-lamina" aria-hidden="true"></span>
+          <span class="nm">Lâmina ultracompacta<small>Grandes formatos</small></span>
+          <span class="ar" aria-hidden="true">&#9656;</span>
+        </button>
+      </div>
+      <div class="msel-panels">
+      <div class="msel-panel" role="tabpanel" id="pn-quartzo" aria-labelledby="tab-quartzo">
+        <span class="tag">Destaque</span>
+        <h3>Quartzo</h3>
+        <div class="msel-band s-quartzo" aria-hidden="true"></div>
+        <p>Superfície de engenharia com alta densidade e cor uniforme de ponta a ponta. É a escolha de quem quer previsibilidade: a peça instalada é igual à amostra vista no orçamento.</p>
+        <dl class="msel-meta">
+          <div><dt>Onde vai melhor</dt><dd>Bancada de cozinha, ilha, lavatório e área gourmet de uso intenso.</dd></div>
+          <div><dt>Ponto de atenção</dt><dd>Não é indicado para exposição direta e permanente ao sol.</dd></div>
+          <div><dt>Indicado para</dt><dd>Quem quer superfície clara sem sustos de veio e com manutenção simples.</dd></div>
+          <div><dt>Acabamento</dt><dd>Bordas retas, boleadas ou trabalhadas, com cuba esculpida no mesmo material.</dd></div>
+        </dl>
+        <div class="msel-bars">
+          <div class="msel-bar"><span>Uniformidade</span><i style="--v:95%"></i></div>
+          <div class="msel-bar"><span>Resistência ao uso</span><i style="--v:85%"></i></div>
+          <div class="msel-bar"><span>Manutenção simples</span><i style="--v:90%"></i></div>
         </div>
-      </article>
-
-      <article class="mat">
-        <figure>
-          <!-- ========== [E] IMAGEM: material mármore ========== -->
-          <img src="img/lavatorio-marmore-bege.webp" alt="Lavatório em mármore bege com cuba de apoio branca" width="1080" height="1080" loading="lazy">
-        </figure>
+      </div>
+      <div class="msel-panel" role="tabpanel" id="pn-marmore" aria-labelledby="tab-marmore" hidden>
         <span class="tag">Nacional e importado</span>
         <h3>Mármore</h3>
+        <div class="msel-band s-marmore" aria-hidden="true"></div>
         <p>Pedra natural de veio marcado, cada chapa é única. Entrega o desenho que material nenhum reproduz igual.</p>
-        <dl>
-          <dt>Onde vai melhor</dt><dd>Lavatórios, painéis, mesas, soleiras e peitoris.</dd>
-          <dt>Ponto de atenção</dt><dd>É poroso e sensível a ácido, pede impermeabilização e cuidado com limpeza.</dd>
+        <dl class="msel-meta">
+          <div><dt>Onde vai melhor</dt><dd>Lavatórios, painéis, mesas, soleiras e peitoris.</dd></div>
+          <div><dt>Ponto de atenção</dt><dd>É poroso e sensível a ácido, pede impermeabilização e cuidado na limpeza.</dd></div>
+          <div><dt>Indicado para</dt><dd>Projeto que quer o veio como protagonista do ambiente.</dd></div>
+          <div><dt>Escolha da chapa</dt><dd>Como cada chapa é diferente, vale escolher a peça antes do corte.</dd></div>
         </dl>
-      </article>
-
-      <article class="mat">
-        <figure>
-          <!-- ========== [E] IMAGEM: material granito ========== -->
-          <img src="img/cozinha-granito-preto.webp" alt="Cozinha finalizada com bancada e ilha em granito escuro" width="1080" height="1080" loading="lazy">
-        </figure>
-        <span class="tag">Pedra natural</span>
-        <h3>Granito</h3>
-        <p>O material mais resistente do dia a dia brasileiro: aguenta calor, risco e uso pesado sem drama.</p>
-        <dl>
-          <dt>Onde vai melhor</dt><dd>Cozinha, churrasqueira, área de serviço e área externa.</dd>
-          <dt>Ponto de atenção</dt><dd>Tons e movimentação variam de chapa para chapa, vale escolher a peça.</dd>
-        </dl>
-      </article>
-
-      <article class="mat wide">
-        <figure>
-          <!-- ========== [E] IMAGEM: material lâmina ultracompacta ========== -->
-          <img src="img/nicho-iluminado-painel.webp" alt="Nicho iluminado revestido com placa de superfície clara e veios finos" width="1080" height="1080" loading="lazy">
-        </figure>
-        <div>
-          <span class="tag">Grandes formatos</span>
-          <h3>Lâmina ultracompacta</h3>
-          <p>Placas de grande formato e espessura reduzida. Permitem revestir painéis inteiros, nichos e frontões com pouquíssimas emendas, mantendo a continuidade do desenho.</p>
-          <dl>
-            <dt>Onde vai melhor</dt><dd>Painéis, nichos, frontões, mesas e revestimento de parede.</dd>
-            <dt>Ponto de atenção</dt><dd>Exige transporte e instalação técnica, o manuseio é o ponto crítico.</dd>
-            <dt>Indicado para</dt><dd>Projetos que pedem superfície contínua e visual limpo.</dd>
-          </dl>
+        <div class="msel-bars">
+          <div class="msel-bar"><span>Desenho e veio</span><i style="--v:95%"></i></div>
+          <div class="msel-bar"><span>Resistência ao uso</span><i style="--v:55%"></i></div>
+          <div class="msel-bar"><span>Manutenção simples</span><i style="--v:45%"></i></div>
         </div>
-      </article>
+      </div>
+      <div class="msel-panel" role="tabpanel" id="pn-granito" aria-labelledby="tab-granito" hidden>
+        <span class="tag">Uso pesado</span>
+        <h3>Granito</h3>
+        <div class="msel-band s-granito" aria-hidden="true"></div>
+        <p>O material mais resistente do dia a dia brasileiro: aguenta calor, risco e uso pesado sem drama.</p>
+        <dl class="msel-meta">
+          <div><dt>Onde vai melhor</dt><dd>Cozinha, churrasqueira, área de serviço e área externa.</dd></div>
+          <div><dt>Ponto de atenção</dt><dd>Tons e movimentação variam de chapa para chapa, vale escolher a peça.</dd></div>
+          <div><dt>Indicado para</dt><dd>Quem quer durabilidade sem abrir mão de pedra natural.</dd></div>
+          <div><dt>Custo-benefício</dt><dd>É onde a pedra natural entrega mais resistência por real investido.</dd></div>
+        </dl>
+        <div class="msel-bars">
+          <div class="msel-bar"><span>Resistência ao uso</span><i style="--v:95%"></i></div>
+          <div class="msel-bar"><span>Resistência ao calor</span><i style="--v:90%"></i></div>
+          <div class="msel-bar"><span>Manutenção simples</span><i style="--v:80%"></i></div>
+        </div>
+      </div>
+      <div class="msel-panel" role="tabpanel" id="pn-lamina" aria-labelledby="tab-lamina" hidden>
+        <span class="tag">Grandes formatos</span>
+        <h3>Lâmina ultracompacta</h3>
+        <div class="msel-band s-lamina" aria-hidden="true"></div>
+        <p>Placas de grande formato e espessura reduzida. Permitem revestir painéis inteiros, nichos e frontões com pouquíssimas emendas, mantendo a continuidade do desenho.</p>
+        <dl class="msel-meta">
+          <div><dt>Onde vai melhor</dt><dd>Painéis, nichos, frontões, mesas e revestimento de parede.</dd></div>
+          <div><dt>Ponto de atenção</dt><dd>Exige transporte e instalação técnica, o manuseio é o ponto crítico.</dd></div>
+          <div><dt>Indicado para</dt><dd>Projetos que pedem superfície contínua e visual limpo.</dd></div>
+          <div><dt>Emendas</dt><dd>O grande formato reduz o número de emendas aparentes na peça.</dd></div>
+        </dl>
+        <div class="msel-bars">
+          <div class="msel-bar"><span>Superfície contínua</span><i style="--v:95%"></i></div>
+          <div class="msel-bar"><span>Resistência ao uso</span><i style="--v:88%"></i></div>
+          <div class="msel-bar"><span>Leveza da peça</span><i style="--v:85%"></i></div>
+        </div>
+      </div>
+      </div>
     </div>
+
+    <p class="lead" style="margin:clamp(28px,4vw,44px) 0 0;max-width:60ch">Na dúvida entre dois materiais, a gente compara os dois na sua obra: uso, orçamento e acabamento. <a class="js-lead" style="color:#fff;text-decoration:underline;text-underline-offset:4px" href="https://wa.me/5519996273192?text=Ol%C3%A1%2C%20quero%20ajuda%20para%20escolher%20o%20material%20da%20minha%20bancada." target="_blank" rel="noopener" data-local="materiais">Tirar a dúvida no WhatsApp</a></p>
   </div>
 </section>
 
@@ -724,9 +802,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="two">
       <div class="rv">
         <p class="eyebrow">Onde atendemos</p>
-        <h2>Americana, Santa Bárbara d'Oeste e São Paulo capital.</h2>
-        <p class="lead">A fábrica fica em Americana, no interior de São Paulo, e é de lá que sai cada peça. Atendemos a região e também obras na capital.</p>
-        <p>Para obras em São Paulo capital o caminho é o mesmo: medição feita no local, produção na nossa fábrica e entrega com a peça instalada. Quem coordena o seu atendimento aqui é quem acompanha a obra até o fim, independente da distância.</p>
+        <h2>De Americana para toda a região de Campinas e São Paulo capital.</h2>
+        <p class="lead">A fábrica fica em Americana, no interior de São Paulo, e é de lá que sai cada peça. Atendemos toda a região de Campinas e também obras na capital.</p>
+        <p>Para obras mais distantes o caminho é o mesmo: medição feita no local, produção na nossa fábrica e entrega com a peça instalada. Quem coordena o seu atendimento aqui é quem acompanha a obra até o fim, independente da distância.</p>
         <p>Atendemos clientes finais, construtores e arquitetos.</p>
         <p style="margin-bottom:0"><a class="btn btn-p js-lead" href="https://wa.me/5519996273192?text=Ol%C3%A1%2C%20minha%20obra%20fica%20em..." target="_blank" rel="noopener" data-local="regioes">Consultar atendimento para a minha obra</a></p>
       </div>
@@ -761,8 +839,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <button class="zoom" type="button" data-full="img/bancada-area-servico.webp" data-cap="Bancada de área de serviço com cuba e tanque instalados" aria-label="Ampliar foto: Bancada de área de serviço com cuba e tanque instalados"><img src="img/bancada-area-servico.webp" alt="Bancada de área de serviço com cuba e tanque instalados" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
       <button class="zoom" type="button" data-full="img/mesa-giratoria-marmore.webp" data-cap="Peça giratória de pedra sobre mesa posta" aria-label="Ampliar foto: Peça giratória de pedra sobre mesa posta"><img src="img/mesa-giratoria-marmore.webp" alt="Peça giratória de pedra sobre mesa posta" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
       <button class="zoom" type="button" data-full="img/mesa-giratoria-detalhe.webp" data-cap="Detalhe de peça giratória de pedra com arranjo de flores" aria-label="Ampliar foto: Detalhe de peça giratória de pedra com arranjo de flores"><img src="img/mesa-giratoria-detalhe.webp" alt="Detalhe de peça giratória de pedra com arranjo de flores" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
-      <button class="zoom" type="button" data-full="img/chapa-parede-marmore.webp" data-cap="Chapa de pedra bege posicionada para revestimento de parede" aria-label="Ampliar foto: Chapa de pedra bege posicionada para revestimento de parede"><img src="img/chapa-parede-marmore.webp" alt="Chapa de pedra bege posicionada para revestimento de parede" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
       <button class="zoom" type="button" data-full="img/ilha-cozinha-obra.webp" data-cap="Ilha de cozinha em superfície clara instalada durante a obra" aria-label="Ampliar foto: Ilha de cozinha em superfície clara instalada durante a obra"><img src="img/ilha-cozinha-obra.webp" alt="Ilha de cozinha em superfície clara instalada durante a obra" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/cozinha-branca-finalizada.webp" data-cap="Cozinha com bancada clara e balcão de apoio finalizada" aria-label="Ampliar foto: Cozinha com bancada clara e balcão de apoio finalizada"><img src="img/cozinha-branca-finalizada.webp" alt="Cozinha com bancada clara e balcão de apoio finalizada" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/bancada-cozinha-obra-l.webp" data-cap="Bancada de cozinha em L instalada durante a obra" aria-label="Ampliar foto: Bancada de cozinha em L instalada durante a obra"><img src="img/bancada-cozinha-obra-l.webp" alt="Bancada de cozinha em L instalada durante a obra" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
+      <button class="zoom" type="button" data-full="img/chapa-parede-marmore.webp" data-cap="Chapa de mármore bege aplicada em revestimento de parede" aria-label="Ampliar foto: Chapa de mármore bege aplicada em revestimento de parede"><img src="img/chapa-parede-marmore.webp" alt="Chapa de mármore bege aplicada em revestimento de parede" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
       <button class="zoom" type="button" data-full="img/peca-lateral-acabamento.webp" data-cap="Detalhe da lateral e do acabamento de uma peça clara" aria-label="Ampliar foto: Detalhe da lateral e do acabamento de uma peça clara"><img src="img/peca-lateral-acabamento.webp" alt="Detalhe da lateral e do acabamento de uma peça clara" width="1080" height="1080" loading="lazy"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span></button>
     </div>
   </div>
@@ -774,11 +854,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="two">
       <div class="rv">
         <p class="eyebrow">Reputação</p>
-        <h2>Quinze anos crescendo por indicação.</h2>
+        <h2>A satisfação de nossos clientes é a nossa maior vitrine.</h2>
       </div>
       <div class="rv">
-        <p class="lead">A JMF nunca dependeu de anúncio para trabalhar. A maior parte das obras sempre chegou por indicação de clientes, construtores e arquitetos que já viram o resultado de perto.</p>
-        <p>Indicação é o tipo de prova que ninguém compra: ela só acontece quando a bancada ficou certa, o prazo foi cumprido e o atendimento continuou depois da instalação.</p>
+        <p class="lead">Em 15 anos de fábrica, o que sustenta a JMF é o resultado entregue: bancada certa, acabamento conferido e prazo cumprido, obra após obra.</p>
+        <p>É por isso que boa parte de quem compra volta e ainda leva a JMF para a próxima obra, do cliente final ao arquiteto e ao construtor.</p>
       </div>
     </div>
 
@@ -894,13 +974,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul>
           <li>Americana, SP</li>
           <li>Santa Bárbara d'Oeste, SP</li>
+          <li>Campinas e região, SP</li>
           <li>São Paulo capital</li>
         </ul>
         <h4 style="margin-top:24px">Empresa</h4>
         <ul>
-          <!-- ========== [H] CNPJ / ENDEREÇO: PREENCHER ========== -->
+          <!-- ========== [H] CNPJ / ENDEREÇO: PREENCHER E DESCOMENTAR ==========
           <li>CNPJ: 00.000.000/0000-00</li>
-          <li>Endereço: preencher</li>
+          <li>Endereço: rua, número, bairro, Americana/SP, CEP</li>
+          ========== FIM [H] ========== -->
         </ul>
       </div>
     </div>
@@ -956,6 +1038,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   "areaServed":[
     {"@type":"City","name":"Americana"},
     {"@type":"City","name":"Santa Bárbara d'Oeste"},
+    {"@type":"City","name":"Campinas"},
     {"@type":"City","name":"São Paulo"}
   ],
   "openingHoursSpecification":[
@@ -1007,6 +1090,31 @@ nav.addEventListener('click', function(e){
 });
 
 /* ---------- reveal on scroll ---------- */
+
+/* seletor de materiais */
+(function(){
+  var tl=document.querySelector('.msel-nav'); if(!tl) return;
+  var tabs=[].slice.call(tl.querySelectorAll('.msel-btn'));
+  function sel(i){
+    tabs.forEach(function(t,j){
+      var on=i===j;
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex=on?0:-1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){sel(i)});
+    t.addEventListener('keydown',function(e){
+      var k=e.key,n=null;
+      if(k==='ArrowDown'||k==='ArrowRight')n=(i+1)%tabs.length;
+      if(k==='ArrowUp'||k==='ArrowLeft')n=(i-1+tabs.length)%tabs.length;
+      if(k==='Home')n=0; if(k==='End')n=tabs.length-1;
+      if(n!==null){e.preventDefault();sel(n);tabs[n].focus()}
+    });
+  });
+})();
+
 var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 var items=document.querySelectorAll('.rv');
 if(reduce||!('IntersectionObserver' in window)){
